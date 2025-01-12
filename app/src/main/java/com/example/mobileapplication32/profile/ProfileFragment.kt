@@ -1,18 +1,14 @@
 package com.example.mobileapplication32.profile
 
-import android.app.Activity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mobileapplication32.R
 import com.example.mobileapplication32.adapters.RvStoryAdapter
 import com.example.mobileapplication32.adapters.VpAdapter
-import com.example.mobileapplication32.databinding.FragmentHomeBinding
 import com.example.mobileapplication32.databinding.FragmentProfileBinding
 import com.example.mobileapplication32.models.Story
 import com.example.mobileapplication32.profile.postsFragments.PostsFragment

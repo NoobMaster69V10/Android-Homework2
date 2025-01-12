@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobileapplication32.adapters.RvPostsAdapter
 import com.example.mobileapplication32.adapters.RvStoryAdapter
+import com.example.mobileapplication32.adapters.VpAdapter
 import com.example.mobileapplication32.databinding.FragmentHomeMainBinding
 import com.example.mobileapplication32.models.Post
 import com.example.mobileapplication32.models.Story
@@ -17,6 +19,9 @@ class HomeMainFragment : Fragment() {
     private lateinit var binding : FragmentHomeMainBinding
     private lateinit var storyAdapter: RvStoryAdapter
     private lateinit var postAdapter: RvPostsAdapter
+
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -69,6 +74,12 @@ class HomeMainFragment : Fragment() {
 
             )
         postAdapter.submitList(list)
+
+    }
+
+    private fun initVP() = with(binding) {
+
+//        vpPostItem.adapter =
     }
 
     companion object {
